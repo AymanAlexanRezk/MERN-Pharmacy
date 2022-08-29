@@ -7,7 +7,55 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+header {
+  background-color: #333444;
+  padding: 1.25rem;
+}
+
+header a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+header p {
+  text-decoration: none;
+  color: #fff8;
+}
+
+main h1 {
+  text-align: center;
+}
+
+footer {
+  background-color: #333444;
+  padding: 1.25rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.products {
+  /* 👇 Make it responsive */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  border: 1px #336699 solid; 
+  margin: 0.25rem;
+  padding: 1.25rem;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product h3 {
+  text-align: center;
 }
