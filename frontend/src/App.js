@@ -1,30 +1,19 @@
-import data from './data';
+import { Link, Route, Routes } from 'react-router-dom';
+import Home from './screens/Home';
 
 function App() {
   return (
     <div className="App">
       <header>
-        <a href="/">Ayman Pharmacy</a>
+        <Link to="/">Ayman Pharmacy</Link>
         <p>Your Choice For Health & Beauty</p>
       </header>
 
       <main>
-        <h1>Featured Products</h1>
-        <div className="products">
-          {data.products.map((product) => (
-            <div key={product.slug} className="product">
-              <img src={product.imgUrl} alt={product.name} />
-              <h3>{product.name}</h3>
-              <p>{product.description}</p>
-              <p>
-                <strong>{product.price} £E</strong>
-              </p>
-              <button>Add to cart</button>
-            </div>
-          ))}
-        </div>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+        </Routes>
       </main>
-
       <footer>Copyright ©2022 Ayman Pharmacy | Hurghada</footer>
     </div>
   );
