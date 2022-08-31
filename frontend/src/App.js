@@ -14,7 +14,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
         </Routes>
       </main>
-      <footer>Copyright ©2022 Ayman Pharmacy | Hurghada</footer>
+      <footer> ©2022 Copyright Ayman Pharmacy | Hurghada</footer>
     </div>
   );
 }
