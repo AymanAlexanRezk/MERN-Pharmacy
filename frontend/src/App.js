@@ -1,9 +1,10 @@
 import { Route, Routes } from 'react-router-dom';
-import Home from './screens/Home';
+import Home from './screens/HomeScreen';
 import { Navbar, Container } from 'react-bootstrap';
 
 // import  from 'react-bootstrap/Container';
 import { LinkContainer } from 'react-router-bootstrap';
+import Product from './screens/ProductScreen';
 
 function App() {
   return (
@@ -16,13 +17,14 @@ function App() {
             </LinkContainer>
           </Container>
         </Navbar>
-        <p>Your Choice For Health & Beauty</p>
+        {/* <p>Your Choice For Health & Beauty</p> */}
       </header>
 
       <main>
-        <Container>
+        <Container className='mt-3 mb-3'>
           <Routes>
             <Route exact path="/" element={<Home />} />
+            <Route exact path="/product/:slug"  element={<Product />} />
           </Routes>
         </Container>
       </main>

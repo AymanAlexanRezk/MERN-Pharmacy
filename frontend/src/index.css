@@ -28,9 +28,9 @@ header p {
   text-decoration: none;
   color: #000000;
   padding: 1rem;
-} 
+}
 
-.app-container{
+.app-container {
   min-height: 100vh;
 }
 
@@ -76,4 +76,8 @@ footer {
 .btn-primary {
   background-color: #f0c040;
   color: #000000;
+}
+
+.image-large {
+  max-width: 100%;
 }
