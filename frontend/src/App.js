@@ -1,20 +1,35 @@
-import { Link, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Home from './screens/Home';
+import Navbar from 'react-bootstrap/Navbar';
+
+import Container from 'react-bootstrap/Container';
+import { LinkContainer } from 'react-router-bootstrap';
 
 function App() {
   return (
-    <div className="App">
+    <div className="d-flex flex-column app-container">
       <header>
-        <Link to="/">Ayman Pharmacy</Link>
+        <Navbar bg="primary" variant="dark">
+          <Container>
+            <LinkContainer to="/">
+              <Navbar.Brand>Ayman Pharmacy</Navbar.Brand>
+            </LinkContainer>
+          </Container>
+        </Navbar>
         <p>Your Choice For Health & Beauty</p>
       </header>
 
       <main>
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-        </Routes>
+        <Container>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+          </Routes>
+        </Container>
       </main>
-      <footer> ©2022 Copyright Ayman Pharmacy | Hurghada</footer>
+
+      <footer className="text-center">
+        <p>Copyright © 2022 Ayman Pharmacy | Hurghada - All rights reserved.</p>
+      </footer>
     </div>
   );
 }
