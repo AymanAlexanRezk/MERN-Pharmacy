@@ -1,8 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
 import Home from './screens/Home';
-import Navbar from 'react-bootstrap/Navbar';
+import { Navbar, Container } from 'react-bootstrap';
 
-import Container from 'react-bootstrap/Container';
+// import  from 'react-bootstrap/Container';
 import { LinkContainer } from 'react-router-bootstrap';
 
 function App() {
